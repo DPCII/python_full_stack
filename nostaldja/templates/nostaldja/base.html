@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Nostaldja</title>
+    <link rel="stylesheet" href="{% static 'css/nostaldja.css' %}" />
+  </head>
+
+  <body>
+    <a href="/"><h1>Nostaldja</h1></a>
+    <nav>
+      <a href="/">Decades</a>
+      <a href="{% url 'fad_list' %}">Fads</a>
+    </nav>
+    {% block content %} {% endblock %}
+  </body>
+</html>
